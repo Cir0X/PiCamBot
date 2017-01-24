@@ -34,7 +34,6 @@ class PiCamBot : TelegramLongPollingBot() {
                 sendUploadStatus(chatId)
                 println("Uploading Photo")
                 sendImageUploadingAFile(photo, chatId)
-//                sendImageUploadingAFile("/Users/cir0x/Drive/Pictures/Liam Dee/406206_452609401436523_1479278512_n.jpg", update.message.chatId)
             } else if (text == "/start") {
                 message.text = "Press the Camera Button below to take a Photo."
                 sendMessage(message)
@@ -56,7 +55,6 @@ class PiCamBot : TelegramLongPollingBot() {
         val action = SendChatAction()
                 .setChatId(chatId)
                 .setAction(ActionType.UPLOADPHOTO)
-//        sendChatAction(action)
         sendChatActionAsync(action, SentActionCallback(action, this))
     }
 
