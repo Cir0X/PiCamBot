@@ -1,0 +1,45 @@
+group 'de.cir0x'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.0.5'
+
+    repositories {
+        mavenCentral()
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.github.jengelman.gradle.plugins:shadow:1.2.4"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'kotlin'
+apply plugin: 'idea'
+apply plugin: 'application'
+apply plugin: "com.github.johnrengelman.shadow"
+
+sourceCompatibility = 1.8
+mainClassName = "MainKt"
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile group: 'org.telegram', name: 'telegrambots', version: '2.4.4.4'
+
+    compile name: 'jrpicam-1.1.0'
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+artifacts {
+    shadowJar
+}
