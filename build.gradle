@@ -34,8 +34,7 @@ repositories {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile group: 'org.telegram', name: 'telegrambots', version: '2.4.4.4'
-
-    compile name: 'jrpicam-1.1.0'
+    compile 'com.github.Hopding:JRPiCam:v1.1.1'
 
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
