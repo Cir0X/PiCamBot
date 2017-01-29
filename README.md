@@ -2,6 +2,9 @@
 
 Just a simple Telegram Bot, which takes pictures with the [Camera Module V2](https://www.raspberrypi.org/products/camera-module-v2/) and sends them to you
 
+
+![](PiCamV2.jpg)
+
 ## How to start
 
 First talk to the [@BotFather](https://telegram.me/BotFather) to get a token.
