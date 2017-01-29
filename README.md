@@ -15,13 +15,30 @@ Make that token available as environment variable
 export TELEGRAM_PICAM_BOT_TOKEN="<your_token>"
 ```
 
-Run with
+## Precompiled
+
+Grab the jar:
+
+```bash
+wget https://github.com/Cir0X/PiCamBot/releases/download/1.0-SNAPSHOT/PiCamBot-1.0-SNAPSHOT-all.jar
+```
+
+and then execute it with:
+
+```bash
+java -jar PiCamBot-1.0-SNAPSHOT-all.jar
+```
+
+
+## Compile it yourself
+
+Clone the repo and run it with
 
 ```bash
 ./gradlew run
 ```
 
-Create Shadow jar
+or create a Shadow jar
 
 ```bash
 ./gradlew shadowJar
