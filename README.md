@@ -1,6 +1,6 @@
 # Pi Camera Telegram Bot
 
-Just a simple Telegram Bot, which takes pictures with the [Camera Module](https://www.raspberrypi.org/products/camera-module-v2/) and sends them to you
+Just a simple Telegram Bot, which takes pictures with the [Camera Module V2](https://www.raspberrypi.org/products/camera-module-v2/) and sends them to you
 
 ## How to start
 
@@ -25,10 +25,11 @@ Create Shadow jar
 # => build/libs/PiCamBot-1.0-SNAPSHOT-all.jar
 ```
 
-Tested on a Pi3 with the NoIR Camera
+Tested on a Pi3 with the NoIR Camera Module V2
 
 ## Acknowledgments
 
+* [Telegram Bot API](https://core.telegram.org/api)
 * [Telegram Bot Java Library](https://github.com/rubenlagus/TelegramBots)
-* [JRPICam](https://github.com/Hopding/JRPiCam)
+* [JRPiCam](https://github.com/Hopding/JRPiCam)
 * [Shadow](https://github.com/johnrengelman/shadow)
